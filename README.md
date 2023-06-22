@@ -1,4 +1,4 @@
-# Task 1: Software configuration.
+# Task 1: Software configuration
 ## Subtask 1: Why did I choose to participate in the Date IT Challenge?
     
 Hi!
@@ -12,4 +12,5 @@ I'm back with new energy and motivation!
 I thought that learning even the basics of test automatization would help me to get a first job as QA.
 It also looks good on CV :grin:
 
- 
+ ## Subtask 2: Score from [GET ISTQB](http://getistqb.com/quiz-purpurowy/) website
+Unfortunately, only 7/14 points. Not much short of 65%
