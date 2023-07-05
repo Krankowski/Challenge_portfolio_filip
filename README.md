@@ -43,17 +43,6 @@ Jobs done! :muscle:
 
 ## Subtask 2: Searching for selectors on log in's site
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-vml0{border-color:inherit;font-family:Georgia, serif !important;text-align:left;vertical-align:top}
-.tg .tg-3ubz{border-color:inherit;font-family:Georgia, serif !important;font-size:22px;text-align:center;vertical-align:middle}
-.tg .tg-k0vl{border-color:inherit;font-family:Georgia, serif !important;font-size:22px;text-align:center;vertical-align:top}
-.tg .tg-49iy{border-color:inherit;font-family:Georgia, serif !important;text-align:center;vertical-align:top}
-</style>
 <table class="tg">
 <thead>
   <tr>
