@@ -160,3 +160,30 @@ class AddAMatchForm(BasePage):
 ## Subtask 6: Branch merging
 
 Done as said!
+
+---
+
+<span style="color:rgb(228, 255, 112)">
+<h1> Task 2: Task: 3 First Test and Assert</h1>
+</span>
+
+## Subtask 1: Completing The Login Page
+I'm kinda to lazy to put like pictures in here while everything is in the files :kissing_heart:  
+
+## Subtask 2: New Test Case
+
+<p align="center">
+  <img width="300" src="https://github.com/Krankowski/Challenge_portfolio_filip/blob/main/tutorial.jpg">
+</p>
+
+## Subtask 3: Assert
+
+I struggled a bit, but it worked!
+
+## Subtask 4: Reiteration of What We Already Know
+
+Piece of cake :blush:
+
+## Subtask 5: Optional Task (to be done independently or in a group)
+
+ChatGPT is a great source of knowledge and assistance!
