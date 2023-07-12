@@ -116,7 +116,7 @@ Jobs done! :muscle:
 ## Subtask 3: Adding selectors to the project
 
 <p align="center">
-  <img width="300" src="https://imgsh.net/a/1aEX4Eo.png">
+  <img width="300" src="https://github.com/Krankowski/Challenge_portfolio_filip/blob/main/task2%3Bsubtask3.png">
 </p>
 
 ## Subtask 4: Adding a new file
