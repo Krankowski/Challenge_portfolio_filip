@@ -1,6 +1,7 @@
 from pages.base_page import BasePage
 from selenium import webdriver
 
+
 class LoginPage(BasePage):
     driver = webdriver.Chrome()
     main_frame_xpath = "//div[contains(@class, 'MuiPaper-root')]"
@@ -15,6 +16,8 @@ class LoginPage(BasePage):
     sign_in_button_xpath = "//child::button"
     header_xpath = "//h5[text()='Scouts Panel']"
     expected_text = "Scouts Panel"
+    information_xpath = "/html/body/div/form/div/div[1]/div[3]/span"
+    expected_information_text = "Identifier or password invalid."
 
     def type_in_email(self, email):
         self.field_send_keys(self.login_field_xpath, email)
@@ -30,3 +33,6 @@ class LoginPage(BasePage):
 
     def title_of_the_header(self):
         self.assert_element_text(self.driver, self.header_xpath, self.expected_text)
+
+    def title_of_the_information(self):
+        self.assert_element_text(self.driver, self.information_xpath, self.expected_information_text)

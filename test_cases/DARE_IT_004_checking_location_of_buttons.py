@@ -1,33 +1,45 @@
 import os
 import time
 import unittest
+
+from pages.base_page import BasePage
 from pages.login_page import LoginPage
 from pages.dashboard import Dashboard
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
+
+from pages.players_page import PlayersPage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
-class TestLoginPage(unittest.TestCase):
+class TestPlayersPage(unittest.TestCase):
 
     @classmethod
     def setUp(self):
         os.chmod(DRIVER_PATH, 755)
         self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
         self.driver.get('https://scouts-test.futbolkolektyw.pl/en/login?redirected=true')
-        self.driver.fullscreen_window()
+        self.driver.maximize_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-    def test_login_to_the_system(self):
+    def test_checking_location_of_buttons(self):
         user_login = LoginPage(self.driver)
-        user_login.title_of_the_header()
-        user_login.title_of_page()
         user_login.type_in_email('user01@getnada.com')
         user_login.type_in_password('Test-1234')
         user_login.click_on_the_sign_in_button()
+
         dashboard_page = Dashboard(self.driver)
         dashboard_page.title_of_page()
+        dashboard_page.click_players_button()
+        time.sleep(5)
+        player_page = PlayersPage(self.driver)
+        player_page.wait_for_name_button_visibility()
+        player_page.wait_for_surname_button_visibility()
+        player_page.wait_for_age_button_visibility()
+
+        base_page = BasePage(self.driver)
+        base_page.take_screenshot("Screenshot_DARE_IT_004")
 
     @classmethod
     def tearDown(self):

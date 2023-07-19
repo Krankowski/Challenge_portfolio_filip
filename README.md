@@ -164,7 +164,7 @@ Done as said!
 ---
 
 <span style="color:rgb(228, 255, 112)">
-<h1> Task 2: Task: 3 First Test and Assert</h1>
+<h1> Task 3: First Test and Assert</h1>
 </span>
 
 ## Subtask 1: Completing The Login Page
@@ -187,3 +187,34 @@ Piece of cake :blush:
 ## Subtask 5: Optional Task (to be done independently or in a group)
 
 ChatGPT is a great source of knowledge and assistance!
+
+
+## Subtask 6: Branch merging
+
+Done as said!
+
+---
+
+<span style="color:rgb(255, 153, 153)">
+<h1> Task 4: Refactor, debugger and test cases</h1>
+</span>
+
+## Subtask 1: Writing test cases
+
+Done as said, everything is on the GoogleDrive.
+
+## Subtask 2: Writing code based on test cases
+
+With a little bit of difficulties, I managed to do so as intended.
+
+## Subtask 3: Adding recordings of running tests to google drive
+
+Everything is on the GoogleDrive.
+
+## Subtask 4: Screenshot method and test report - for willing and for groups
+
+I managed only to use screenshot method. I got down to it too late ;(
+
+## Subtask 5: For volunteers → Construction of if else
+
+Unfortunately not today...
