@@ -201,13 +201,13 @@ Done as said!
 
 ## Subtask 1: Writing test cases
 
-Done as said, everything is on the GoogleDrive.
+Done as said, everything is on the GoogleDrive. I`m dumb. I forgot to put link in here, so here we go: [Google Drive](https://drive.google.com/drive/folders/1yNEGEKu426Oypud9SVf7aHwpX_rPjDB4?usp=sharing)
 
 ## Subtask 2: Writing code based on test cases
 
 With a little bit of difficulties, I managed to do so as intended.
 
-## Subtask 3: Adding recordings of running tests to google drive
+## Subtask 3: Adding recordings of running tests to google drive. Same thing here as in subtask1. [Google Drive](https://drive.google.com/drive/folders/1yNEGEKu426Oypud9SVf7aHwpX_rPjDB4?usp=sharing)
 
 Everything is on the GoogleDrive.
 
