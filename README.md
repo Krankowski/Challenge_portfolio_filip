@@ -207,9 +207,9 @@ Done as said, everything is on the GoogleDrive. I`m dumb. I forgot to put link i
 
 With a little bit of difficulties, I managed to do so as intended.
 
-## Subtask 3: Adding recordings of running tests to google drive. Same thing here as in subtask1. [Google Drive](https://drive.google.com/drive/folders/1yNEGEKu426Oypud9SVf7aHwpX_rPjDB4?usp=sharing)
+## Subtask 3: Adding recordings of running tests to google drive.
 
-Everything is on the GoogleDrive.
+Everything is on the GoogleDrive. Same thing here as in subtask1. [Google Drive](https://drive.google.com/drive/folders/1yNEGEKu426Oypud9SVf7aHwpX_rPjDB4?usp=sharing)
 
 ## Subtask 4: Screenshot method and test report - for willing and for groups
 
