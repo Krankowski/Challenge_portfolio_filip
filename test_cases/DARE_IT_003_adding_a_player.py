@@ -1,5 +1,4 @@
 import os
-import time
 import unittest
 
 from pages.add_a_player_page import AddAPlayer
@@ -13,7 +12,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
-class TestDashboardPage(unittest.TestCase):
+class TestDashboardPage_2(unittest.TestCase):
 
     @classmethod
     def setUp(self):
@@ -30,10 +29,11 @@ class TestDashboardPage(unittest.TestCase):
         user_login.click_on_the_sign_in_button()
 
         dashboard_page = Dashboard(self.driver)
+        dashboard_page.title_of_page_and_clickability()
         dashboard_page.click_add_player_button()
 
         add_a_player_page = AddAPlayer(self.driver)
-        add_a_player_page.title_of_the_page()
+        add_a_player_page.title_of_the_page_and_clickability()
         add_a_player_page.type_in_email('test@gmail.com')
         add_a_player_page.type_in_name('Jacek')
         add_a_player_page.type_in_surname('Dżdżownica')
@@ -43,12 +43,13 @@ class TestDashboardPage(unittest.TestCase):
         add_a_player_page.type_in_the_age_data_picker('02031998')
         add_a_player_page.type_in_main_position('defender')
         add_a_player_page.click_on_the_submit_button()
-        time.sleep(10)
+
         edit_a_player_page_jacek_dżdżownica_page = EditAPlayer(self.driver)
-        edit_a_player_page_jacek_dżdżownica_page.title_of_the_header()
+        edit_a_player_page_jacek_dżdżownica_page.title_of_the_header_and_visibility_of_pop_out()
 
         base_page = BasePage(self.driver)
         base_page.take_screenshot("Screenshot_DARE_IT_003")
+        base_page.generate_html_report("DARE_IT_003_html_report")
 
     @classmethod
     def tearDown(self):

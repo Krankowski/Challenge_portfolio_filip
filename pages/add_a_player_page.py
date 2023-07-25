@@ -4,16 +4,19 @@ from pages.base_page import BasePage
 class AddAPlayer(BasePage):
     add_a_player_url = "https://scouts-test.futbolkolektyw.pl/en/players/add"
     expected_title = "Add player"
-    email_textbox_xpath = "/html/body/div/div[1]/main/div[2]/form/div[2]/div/div[1]/div/div/input"
-    name_texbox_xpath = "/html/body/div/div[1]/main/div[2]/form/div[2]/div/div[2]/div/div/input"
-    surname_texbox_xpath = "/html/body/div/div[1]/main/div[2]/form/div[2]/div/div[3]/div/div/input"
-    phone_texbox_xpath = "/html/body/div/div[1]/main/div[2]/form/div[2]/div/div[4]/div/div/input"
-    weight_spinbutton_xpath = "/html/body/div/div[1]/main/div[2]/form/div[2]/div/div[5]/div/div/input"
-    height_spinbutton_xpath = "/html/body/div/div[1]/main/div[2]/form/div[2]/div/div[6]/div/div/input"
-    age_data_picker_xpath = "/html/body/div/div[1]/main/div[2]/form/div[2]/div/div[7]/div/div/input"
-    main_position_texbox_xpath = "/html/body/div/div[1]/main/div[2]/form/div[2]/div/div[11]/div/div/input"
-    submit_button_xpath = "/html/body/div/div[1]/main/div[2]/form/div[3]/button[1]"
-    saved_player_alart_xpath = "/html/body/div/div[2]/div/div/div[1]"
+    email_textbox_xpath = "//*[@name='email']"
+    name_texbox_xpath = "//*[@name='name']"
+    surname_texbox_xpath = "//*[@name='surname']"
+    phone_texbox_xpath = "//*[@name='phone']"
+    weight_spinbutton_xpath = "//*[@name='weight']"
+    height_spinbutton_xpath = "//*[@name='height']"
+    age_data_picker_xpath = "//*[@name='age']"
+    main_position_texbox_xpath = "//*[@name='mainPosition']"
+    submit_button_xpath = "//*[@type = 'submit']"
+
+    def title_of_the_page_and_clickability(self):
+        self.wait_for_element_to_be_clickable(self.submit_button_xpath)
+        assert self.get_page_title(self.add_a_player_url) == self.expected_title
 
     def type_in_email(self, email):
         self.field_send_keys(self.email_textbox_xpath, email)
@@ -41,7 +44,3 @@ class AddAPlayer(BasePage):
 
     def click_on_the_submit_button(self):
         self.click_on_the_element(self.submit_button_xpath)
-
-    def title_of_the_page(self):
-        assert self.get_page_title(self.add_a_player_url) == self.expected_title
-

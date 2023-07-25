@@ -1,3 +1,4 @@
+import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support import expected_conditions as EC
@@ -29,20 +30,9 @@ class BasePage():
         element_text = element.text
         assert expected_text == element_text
 
-    def assert_element_text(self, driver, information_xpath, expected_information_text):
-        element = driver.find_element(by=By.XPATH, value=information_xpath)
-        element_text = element.text
-        assert expected_information_text == element_text
-
-    def assert_element_text(self, driver, edit_header_xpath, edit_expected_text):
-        element = driver.find_element(by=By.XPATH, value=edit_header_xpath)
-        element_text = element.text
-        assert edit_expected_text == element_text
-
-    def wait_for_element_to_be_clickable(self, locator, locator_type=DEFAULT_LOCATOR_TYPE):
-        wait = WebDriverWait(self.driver, 15)
+    def wait_for_element_to_be_clickable(self, locator, locator_type=DEFAULT_LOCATOR_TYPE, timeout=25):
+        wait = WebDriverWait(self.driver, timeout)
         element = wait.until(EC.element_to_be_clickable((locator_type, locator)))
-        time.sleep(10)
 
     def wait_for_element_visibility(self, by, value, timeout=15):
         wait = WebDriverWait(self.driver, timeout)
@@ -56,3 +46,12 @@ class BasePage():
 
         screenshot_path = os.path.join(screenshot_folder, f"{name}_{timestamp}.png")
         self.driver.save_screenshot(screenshot_path)
+
+    def generate_html_report(self, report_name='report.html'):
+        timestamp = time.strftime("%d%m%Y_%H%M")
+        report_folder = os.path.join(os.getcwd(), "reports")
+        if not os.path.exists(report_folder):
+            os.makedirs(report_folder)
+
+        report_path = os.path.join(report_folder, f"{report_name}_{timestamp}")
+        pytest.main(['--html=' + report_path])
