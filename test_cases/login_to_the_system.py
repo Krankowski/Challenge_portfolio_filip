@@ -22,12 +22,13 @@ class TestLoginPage(unittest.TestCase):
     def test_login_to_the_system(self):
         user_login = LoginPage(self.driver)
         user_login.title_of_the_header()
-        user_login.title_of_page()
+        user_login.title_of_page_and_clickability()
         user_login.type_in_email('user01@getnada.com')
         user_login.type_in_password('Test-1234')
         user_login.click_on_the_sign_in_button()
+
         dashboard_page = Dashboard(self.driver)
-        dashboard_page.title_of_page()
+        dashboard_page.title_of_page_and_clickability()
 
     @classmethod
     def tearDown(self):

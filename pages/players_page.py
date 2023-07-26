@@ -3,7 +3,7 @@ from pages.base_page import BasePage
 
 class PlayersPage(BasePage):
     players_url = "https://scouts-test.futbolkolektyw.pl/en/players"
-    expected_title_suffix = "Players"
+    expected_title_prefix = "Players"
     name_button_xpath = "//button[span/div/div[contains(text(), 'Name')]]"
     surname_button_xpath = "//button[span/div/div[contains(text(), 'Surname')]]"
     age_button_xpath = "//button[span/div/div[contains(text(), 'Age')]]"
@@ -13,7 +13,7 @@ class PlayersPage(BasePage):
 
     def title_of_page(
             self):  # Compares the "get" title of the page to the expected title which changes but always starts with "Players"
-        assert self.get_page_title(self.players_url).startswith(self.expected_title_suffix)
+        assert self.get_page_title(self.players_url).startswith(self.expected_title_prefix)
 
     def wait_for_name_button_clickability(self):
         self.wait_for_element_to_be_clickable(self.name_button_xpath)

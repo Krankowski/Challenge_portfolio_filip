@@ -1,7 +1,7 @@
 import unittest
 
 from test_cases.DARE_IT_001_wrong_password import TestLoginPage
-from test_cases.DARE_IT_002_Signing_out import TestDashboardPage_1
+from test_cases.DARE_IT_002_signing_out import TestDashboardPage_1
 from test_cases.DARE_IT_003_adding_a_player import TestDashboardPage_2
 from test_cases.DARE_IT_004_checking_location_of_buttons import TestPlayersPage
 from test_cases.DARE_IT_005_adding_a_match_for_last_created_player import TestMatchesPage
