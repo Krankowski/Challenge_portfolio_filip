@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 
 class LoginPage(BasePage):
 
-    login_url = "https://scouts-test.futbolkolektyw.pl/en/login?redirected=true"
+    login_url = "https://dareit.futbolkolektyw.pl/en/login?redirected=true"
     expected_title = "Scouts panel - sign in"
     login_field_xpath = "//*[@id='login']"
     password_field_xpath = "//*[@id='password']"

@@ -2,7 +2,7 @@ from pages.base_page import BasePage
 
 
 class PlayersPage(BasePage):
-    players_url = "https://scouts-test.futbolkolektyw.pl/en/players"
+    players_url = "https://dareit.futbolkolektyw.pl/en/players"
     expected_title_prefix = "Players"
     name_button_xpath = "//button[span/div/div[contains(text(), 'Name')]]"
     surname_button_xpath = "//button[span/div/div[contains(text(), 'Surname')]]"

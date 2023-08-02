@@ -18,7 +18,7 @@ class TestDashboardPage_2(unittest.TestCase):
     def setUp(self):
         os.chmod(DRIVER_PATH, 755)
         self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-        self.driver.get('https://scouts-test.futbolkolektyw.pl/en/login?redirected=true')
+        self.driver.get('https://dareit.futbolkolektyw.pl/en/login?redirected=true')
         self.driver.maximize_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
