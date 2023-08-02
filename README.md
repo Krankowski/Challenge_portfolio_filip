@@ -213,8 +213,26 @@ Everything is on the GoogleDrive. Same thing here as in subtask1. [Google Drive]
 
 ## Subtask 4: Screenshot method and test report - for willing and for groups
 
-I managed only to use screenshot method. I got down to it too late ;(
+I managed only to do it!
 
 ## Subtask 5: For volunteers → Construction of if else
 
 Unfortunately not today...
+
+---
+
+<span style="color:rgb(228, 255, 112)">
+<h1> Task 6: Reporting bugs, and test report</h1>
+</span>
+
+## Subtask 1: Changing the environment
+
+Done. You can check that in test case file in PyCharm.
+
+## Subtask 2: Bug reports
+
+Just check: [Click here](https://docs.google.com/spreadsheets/d/1WrRHS5MspB1v2q9ZoLHysYhJYk_wq266ldXCoKdnvsM/edit?usp=sharing)
+
+## Subtask 3: Test report
+
+Just check: [Click here](https://docs.google.com/document/d/1ZB7R0mgGCFgMhTE98pXO7hrcCS1b0e6Xp49ZrNMZz1A/edit?usp=sharing)
