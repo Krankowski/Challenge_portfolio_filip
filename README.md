@@ -25,9 +25,6 @@ I have added line 4 and 5 and changed line 14. Fix was found via Google.
 
 Submitted as "first_task" commit.
 
-## Subtask 4: Score from [GET ISTQB](http://getistqb.com/quiz-purpurowy/) website
-Unfortunately, only 7/14 points. Not much short of 65%
-
 ---
 <span style="color:rgb(142, 201, 117)">
 <h1> Task 2: Selectors</h1>
