@@ -44,11 +44,11 @@ class TestMatchesPage(unittest.TestCase):
 
         adding_match_player_page = AddingMatchPlayer(self.driver)
         adding_match_player_page.wait_for_submit_button_clickability()
-        adding_match_player_page.type_in_my_team('Coś')
-        adding_match_player_page.type_in_enemy_team('Łoś')
-        adding_match_player_page.type_in_my_team_score('12')
-        adding_match_player_page.type_in_enemy_team_score('8')
-        adding_match_player_page.type_in_data('19072023')
+        adding_match_player_page.type_in_my_team('Wisła Kraków')
+        adding_match_player_page.type_in_enemy_team('Puszcza Niepołomnice')
+        adding_match_player_page.type_in_my_team_score('1')
+        adding_match_player_page.type_in_enemy_team_score('4')
+        adding_match_player_page.type_in_data('6062023')
         adding_match_player_page.click_match_at_home_radiobutton()
         adding_match_player_page.click_submit_button()
 

@@ -3,7 +3,7 @@ import unittest
 
 from pages.add_a_player_page import AddAPlayer
 from pages.base_page import BasePage
-from pages.edit_a_player_jacek_dżdżownica_page import EditAPlayer
+from pages.edit_a_player_jan_kowalski_page import EditAPlayer
 from pages.login_page import LoginPage
 from pages.dashboard import Dashboard
 from selenium import webdriver
@@ -35,17 +35,17 @@ class TestDashboardPage_2(unittest.TestCase):
         add_a_player_page = AddAPlayer(self.driver)
         add_a_player_page.title_of_the_page_and_clickability()
         add_a_player_page.type_in_email('test@gmail.com')
-        add_a_player_page.type_in_name('Jacek')
-        add_a_player_page.type_in_surname('Dżdżownica')
+        add_a_player_page.type_in_name('Jan')
+        add_a_player_page.type_in_surname('Kowalski')
         add_a_player_page.type_in_phone('789 456 123')
         add_a_player_page.type_in_weight("80")
         add_a_player_page.type_in_height("190")
-        add_a_player_page.type_in_the_age_data_picker('02031998')
+        add_a_player_page.type_in_the_age_data_picker('02031999')
         add_a_player_page.type_in_main_position('defender')
         add_a_player_page.click_on_the_submit_button()
 
-        edit_a_player_page_jacek_dżdżownica_page = EditAPlayer(self.driver)
-        edit_a_player_page_jacek_dżdżownica_page.title_of_the_header_and_visibility_of_pop_out()
+        edit_a_player_page_jan_kowalski_page = EditAPlayer(self.driver)
+        edit_a_player_page_jan_kowalski_page.title_of_the_header_and_visibility_of_pop_out()
 
         base_page = BasePage(self.driver)
         base_page.take_screenshot("Screenshot_DARE_IT_003")

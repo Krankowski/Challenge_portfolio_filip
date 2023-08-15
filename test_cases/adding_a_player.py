@@ -11,7 +11,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
-class TestLoginPage(unittest.TestCase):
+class TestLoginPage_2(unittest.TestCase):
 
     @classmethod
     def setUp(self):

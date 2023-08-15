@@ -201,7 +201,7 @@ Done as said!
 
 ## Subtask 1: Writing test cases
 
-Done as said, everything is on the GoogleDrive. I`m dumb. I forgot to put link in here, so here we go: [Google Drive](https://drive.google.com/drive/folders/1yNEGEKu426Oypud9SVf7aHwpX_rPjDB4?usp=sharing)
+Done as said, everything is on the GoogleDrive. Check here: [Google Drive](https://docs.google.com/spreadsheets/d/1pifEBBpws1hr4d87H7uo2_fC_H-OaJZI/edit?usp=sharing&ouid=103846351617777504097&rtpof=true&sd=true)
 
 ## Subtask 2: Writing code based on test cases
 
@@ -213,7 +213,7 @@ Everything is on the GoogleDrive. Same thing here as in subtask1. [Google Drive]
 
 ## Subtask 4: Screenshot method and test report - for willing and for groups
 
-I managed only to do it!
+All done!
 
 ## Subtask 5: For volunteers → Construction of if else
 

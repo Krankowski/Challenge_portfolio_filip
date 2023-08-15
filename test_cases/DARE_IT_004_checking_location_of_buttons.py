@@ -33,7 +33,7 @@ class TestPlayersPage(unittest.TestCase):
         dashboard_page.click_players_button()
 
         player_page = PlayersPage(self.driver)
-        player_page.title_of_page()
+        player_page.title_of_page() #This step validates if the proper site is opened. Currently it can't be validate because of the wrong layout of the site. It doesn't affect the test case itself, but running the test ends with an error.
         player_page.wait_for_name_button_clickability()
         player_page.wait_for_surname_button_clickability()
         player_page.wait_for_age_button_clickability()
